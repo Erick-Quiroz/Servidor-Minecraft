@@ -1,0 +1,49 @@
+# Ignorar archivos y carpetas generadas/privadas del servidor Minecraft
+# Ajusta según lo que quieras versionar (mods, configs, etc.)
+
+# Logs y reportes
+logs/
+*.log
+crash-reports/
+hs_err_pid*
+
+# Mundo y datos de jugadores
+world/
+world/**/playerdata/
+world/**/region/
+level.dat
+level.dat_old
+
+# Archivos de usuario / operativos que no conviene subir
+usercache.json
+ops.json
+banned-players.json
+banned-ips.json
+whitelist.json
+
+# Configs locales / secretos
+server.properties
+.env
+
+# Archivos temporales y caches
+tmp/
+cache/
+*.pid
+*.lock
+
+# Backups
+backups/
+
+# IDEs / editor
+.vscode/
+.idea/
+*.iml
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Jars y artefactos grandes (opcional: quita si quieres versionar jars/mods)
+*.jar
+mods/
+libraries/
